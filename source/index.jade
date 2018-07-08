@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    title Product Gallery
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href="images/favicon.ico" rel="shortcut icon")
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
+    link(rel="stylesheet", href="stylesheets/all.css")
+  body
+    .header
+      h1
+        a.logo(href="#") Comicomic
+
+    .container
+      .comic-content
+        .comic-img
+          img(src="images/comic cover.png", alt="")
+        .comic-info
+          .comic-title
+            h2 MY HEXSCHOOL
+          .comic-detail
+            .comic-genres
+              h3 Genres
+              span Fusce/vehicula/dolor
+            .comic-author
+              h3 Author
+              span Namae Shiranai
+            .comic-status
+              h3 Status
+              span Ongoing
+            .comic-rate
+              h3 Rate
+              .star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.far.fa-star
+            .comic-summary
+              h3 Summary
+              p If your banker breaks, you snap; if your apothecary by mistake sends you poison in your pills, you die.
+              p Therefore, I say, I saw that this situation of mine was the precise situation of every mortal that has this Siamese connexion with a plurality of other mortals. 
+      
+      .chapter-content
+        .chapter-label
+          h2 All Chapters
+        ul.chapters
+          li.chapter
+            a(href="page.html") Chapter 1: The F2E Challenge Start!
+          li.chapter
+            a(href="page.html") Chapter 2: Todo List is Going Crazy!
+    
+    script(src="javascripts/vendor.js")
+    script(src="javascripts/all.js")

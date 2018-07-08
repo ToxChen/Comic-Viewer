@@ -1,0 +1,190 @@
+/*-------------------------*/
+/* $Globel
+/*-------------------------*/
+*, *:before, *:after
+  position: relative
+  box-sizing: border-box
+
+html, body
+  font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif', '微軟正黑體', 'Microsoft JhengHei'
+
+body
+  background-color: $grey
+
+body.NightMode
+  background-color: $black
+
+a
+  text-decoration: none
+  &:hover, &:active, &:focus
+    text-decoration: none
+    outline: none
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+input, select, textarea
+  border: none
+  &:focus
+    outline: none
+
+img
+  max-width: 100%
+  height: auto
+
+/*-------------------------*/
+/* $Font
+/*-------------------------*/
+// Roboto樣式
+// black 900
+// bold 700
+// medium 500
+// regular 400
+// light 300
+
+/*-------------------------*/
+/* $Layout
+/*-------------------------*/
+.container
+  width: 620px
+  margin: 0 auto
+
+/*-------------------------*/
+/* $Text
+/*-------------------------*/
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+/*-------------------------*/
+/* $Button
+/*-------------------------*/
+.btn
+  display: inline-block
+  vertical-align: top
+  position: relative
+  margin: 0
+  height: 36px
+  line-height: 36px
+  padding: 0 38px 0 16px
+  box-sizing: border-box
+  font-size: 16px
+  text-align: center
+  font-family: 'Roboto', arial, sans-serif
+  letter-spacing: 0
+  text-decoration: none
+  color: $black
+  border: 1px solid $black
+  border-radius: 18px
+  outline: 0
+  cursor: pointer
+  overflow: hidden
+  user-select: none
+  user-drag: none
+  transition: all 0.3s
+
+/*-------------------------*/
+/* $Header
+/*-------------------------*/
+.header
+  width: 100%
+  height: 74px
+  line-height: 74px
+  background-color: $black
+  text-align: center
+  .logo
+    font-size: 36px
+    font-weight: 900
+    font-style: italic
+    color: $primary
+
+body.NightMode
+  .header
+    background-color: $primary
+    .logo
+      color: $black
+
+/*-------------------------*/
+/* $Comic
+/*-------------------------*/
+.comic-content
+  display: flex
+  margin-top: 24px
+  .comic-img
+    width: 300px
+    border: 4px solid $black
+  .comic-info
+    width: calc(100% - 300px)
+    .comic-title
+      height: 52px
+      line-height: 52px
+      text-align: center
+      h2
+        font-size: 36px
+        font-weight: 700
+        padding: 0 24px
+        background-color: $black
+        color: $white
+    .comic-detail
+      padding: 16px 0 0 24px
+    .comic-genres, .comic-author, .comic-status, .comic-rate
+      display: flex
+      h3
+        font-size: 16px
+        font-weight: 700
+        line-height: 24px
+        min-width: 53px
+        margin-right: 20px
+        color: $black
+      span
+        font-size: 16px
+        line-height: 24px
+        color: $black
+    .comic-genres
+      margin-bottom: 8px
+    .comic-author
+      margin-bottom: 8px
+    .comic-status
+      margin-bottom: 8px
+    .comic-rate
+      margin-bottom: 24px
+      .star
+        i
+          font-size: 16px
+          margin-right: 10px
+          &:last-child
+            margin-right: 0
+    .comic-summary
+      margin-bottom: 8px
+      p
+        line-height: 24px
+        color: $black
+
+/*-------------------------*/
+/* $Chapter
+/*-------------------------*/
+.chapter-content
+  margin: 24px 0 50px 0
+  .chapter-label
+    h2
+      display: inline-block
+      font-size: 24px
+      font-weight: 700
+      padding: 8px 24px
+      background-color: $black
+      color: $white
+  .chapters
+    padding: 8px 0
+    border: 4px solid $black
+    background-color: $white
+    a
+      display: block
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+      padding: 8px 24px
+      color: $black
+      &:hover
+        background-color: $black
+        color: $white
