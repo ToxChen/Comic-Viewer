@@ -26,6 +26,6 @@ UI設計稿 : https://www.behance.net/gallery/67398129/F2E-Week4-Product-Gallery
 
 ## Week5 - Comic Viewer
 
-DEMO : <br>
+DEMO : https://toxchen.github.io/Comic-Viewer/<br>
 UI設計稿 : <br>
-主要練習技術 : <br>
+主要練習技術 : UI Design、Web Layout、Flexbox<br>
